@@ -1,0 +1,8 @@
+function birthday(date) {
+    let now = new Date()
+    let userBirthday = new Date(date)
+    let year = now.setFullYear(now.getFullYear() - 18)
+    return year > userBirthday
+}
+
+console.log(birthday('2008-01-01'))
